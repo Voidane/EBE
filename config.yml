@@ -1,0 +1,88 @@
+   # ------------------- ELITE BLOCK EFFECTS ------------------- #
+   #
+   #                      Creator - Voidane                      #
+   #
+   # ------------------- ELITE BLOCK EFFECTS ------------------- #
+
+Version: 1.01.2
+
+# --------- Permissions --------- #
+# Permissions are not a physical 'thing' in game, we mean by this is ow the plugin checks it
+# When you add a permission to the assigned Block effect section , we check the permission
+# Default permissions are diffirent , see them on the plugin page or on social help
+# Permissions list on the plugin page
+
+
+# --------- Information --------- #
+# This plugin was made by Voidane
+# For more information visit the plugin page
+# Projectile cracks and breaking is found in the Projectile Options.yml
+
+
+# MAKE SURE THIS IS CORRECT | MAKE SURE THIS IS CORRECT V V V V V
+Amount Placement Effects: 4
+
+Block Effects:
+
+   # Section number count | Divider
+   1:
+      # Use proper material names such as STONE , Id's unaccepted
+      Material Name: STONE
+      # If the block has extra credentials after , it will be a number , so wool , 1-15 , none for default
+      Material Data: 0
+      # List of effects on the plugin page
+      Effect: NOTE
+      Effect Destroy: FIREWORKS_SPARK
+      # Pre made types of different patterns for effects
+      Type: 1
+      Type Destroy: 1
+      # Make a sound when the block is placed | All sounds listed on plugin page
+      Sound Place: LEVEL_UP
+      Sound Break: VILLAGER_NO
+      # Permissions set for this to be used & includes breaking effects
+      Permission: eliteblockeffects.place.effect.1
+      # Permission includes sound on place and break
+      Permission Sound: eliteblockeffects.place.sound.1
+   2:
+      Material Name: WOOL
+      Material Data: 1
+      Effect: HEART
+      Effect Destroy: HEART
+      Type: 1
+      Type Destroy: 1
+      Sound Place: SHEEP_IDLE
+      Sound Break: SHEEP_IDLE
+      Permission: eliteblockeffects.place.effect.2
+      Permission Sound: eliteblockeffects.place.sound.2
+   3:
+      Material Name: DIAMOND_BLOCK
+      Material Data: 0
+      Effect: NOTE
+      Effect Destroy: FIREWORKS_SPARK
+      Type: 1
+      Type Destroy: 1
+      Sound Place: AMBIENCE_RAIN
+      Sound Break: VILLAGER_NO
+      Permission: eliteblockeffects.place.effect.3
+      Permission Sound: eliteblockeffects.place.sound.3
+   4:
+      Material Name: DIRT
+      Material Data: 0
+      Effect: NOTE
+      Effect Destroy: FIREWORKS_SPARK
+      Type: 1
+      Type Destroy: 1
+      Sound Place: AMBIENCE_RAIN
+      Sound Break: VILLAGER_NO
+      Permission: eliteblockeffects.place.effect.4
+      Permission Sound: eliteblockeffects.place.sound.4
+      
+# Deny what worlds should not have access to the effects of block placement , and breaking , including sounds
+Effects Denied Worlds:
+   - fakeworld
+   - fakeworld2
+   
+# Deny what worlds should not have access to projectile events
+Projectile Denied Worlds:
+   - fakeworld
+   - fakeworld2

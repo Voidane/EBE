@@ -1,0 +1,32 @@
+name: EliteBlockEffects
+author: Voidane
+version: 1.0
+main: org.voidane.eliteblockeffects.Main
+description: This plugin allows sound to be played when blocks are broken and placed, it also allows effects to take action when a block is placed or broken
+commands:
+   eliteblockeffects:
+      description: open up the options for elite block effects
+      usage: /eliteblockeffects help ( For more Information )
+      aliases: [ebe,elitebe,eliteblocke]
+permissions:
+   eliteblockeffects.*:
+      description: gain access to all of eliteblockeffects command by permission
+      children:
+         eliteblockeffects.reload: true
+         eliteblockeffects: true
+         eliteblockeffects.help: true
+         eliteblockeffects.arrow: true
+         eliteblockeffects.arroweffect.crack: true
+         eliteblockeffects.arroweffect.break: true
+   eliteblockeffects.reload:
+      description: reload the config files   
+   eliteblockeffects:
+      description: allow usage of the command
+   eliteblockeffects.help:
+      description: show more command by ebe
+   eliteblockeffects.arrow:
+      description: allow the player to acess and view options for arrows
+   eliteblockeffects.arroweffect.crack:
+      description: allow the player to make cracks into blocks when enabled
+   eliteblockeffects.arroweffect.break:
+      description: allow the player to make cracks into blocks when enabled
